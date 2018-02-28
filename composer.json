@@ -1,0 +1,33 @@
+{
+  "name": "jsefton/laravel-protocol",
+  "type": "library",
+  "description": "Handles detection of http protocol and changes internal links and redirects",
+  "keywords": ["laravel","php","https","http", "protocol", "ssl", "detect", "redirect"],
+  "homepage": "https://github.com/jsefton/laravel-protocol",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jamie Sefton",
+      "email": "info@jamie-sefton.co.uk"
+    }
+  ],
+  "require": {
+    "laravel/framework": ">=5.4"
+  },
+  "archive": {
+    "exclude": [
+      "/tests",
+      "tests",
+      "tests/*.*",
+      "phpunit.xml",
+      ".gitignore",
+      ".gitattributes",
+      "README.md"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "JSefton\\Protocol\\": "src/"
+    }
+  }
+}
