@@ -20,7 +20,7 @@ JSefton\Protocol\ProtocolServiceProvider::class
 After installation you will need to publish the config file. To do this run:
 
 ```bash
-php artisan vendor:publish --tag=protocol
+php artisan vendor:publish --tag=protocol.config
 ```
 
 This will create the file `config/protocol.php` where you can configure the settings.

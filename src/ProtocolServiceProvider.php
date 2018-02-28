@@ -13,6 +13,10 @@ class ProtocolServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // Configuration
+        $this->publishes([
+            __DIR__.'/../config/' => config_path(),
+        ], 'protocol.config');
 
     }
 
