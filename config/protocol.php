@@ -6,9 +6,9 @@ return [
     'auto' => false,
 
     /**
-     * Force everything to a set protocol
-     * If blank then won't force anything
-     * Ignored it 'auto' is true.
+     * Force everything to a set protocol either
+     * 'http' or 'https'. If blank then won't
+     * force anything. Ignored if 'auto' is true.
      */
     'protocol' => '',
 

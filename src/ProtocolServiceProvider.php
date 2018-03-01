@@ -18,7 +18,7 @@ class ProtocolServiceProvider extends ServiceProvider
             __DIR__.'/../config/' => config_path(),
         ], 'protocol.config');
 
-       $this->handle();
+        $this->handle();
     }
 
     /**
@@ -31,6 +31,10 @@ class ProtocolServiceProvider extends ServiceProvider
 
     }
 
+    /**
+     * Main method to process config and
+     * handle what you want to do
+     */
     public function handle()
     {
         $config = config('protocol');
