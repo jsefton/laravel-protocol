@@ -62,8 +62,10 @@ class ProtocolServiceProvider extends ServiceProvider
      */
     public static function redirectToProtocol($protocol)
     {
-        $redirect = $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-        header('Location: ' . $redirect);
+        if (isset($_SERVER['HTTP_HOST'])) {
+            $redirect = $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+            header('Location: ' . $redirect);
+        }
     }
 
     /**
